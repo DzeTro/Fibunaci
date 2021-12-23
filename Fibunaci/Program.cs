@@ -16,11 +16,17 @@ namespace Fibunaci
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(a+ " " + b + " " +c);
-                a = b + c;
-                b = a + c;
-                c = a + b;
-            } Console.ReadKey();
+                Berechung(ref a, ref b, ref c);
+            }
+            Console.ReadKey();
+        }
+
+        private static void Berechung(ref int a, ref int b, ref int c)
+        {
+            Console.WriteLine(a + " " + b + " " + c);
+            a = b + c;
+            b = a + c;
+            c = a + b;
         }
     }
 }
